@@ -1,0 +1,77 @@
+/* Clean text-based tech stack below the 3D canvas */
+.techstack-text {
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.techstack-text h3 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.techstack-groups {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.techstack-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.techstack-group h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accentColor, #c2a4ff);
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.techstack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-chip {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(194, 164, 255, 0.25);
+  background: rgba(194, 164, 255, 0.06);
+  color: #e0d8f0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.tech-chip:hover {
+  border-color: rgba(194, 164, 255, 0.6);
+  background: rgba(194, 164, 255, 0.15);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(194, 164, 255, 0.15);
+}
+
+@media only screen and (max-width: 900px) {
+  .techstack-text {
+    padding: 40px 20px;
+  }
+
+  .techstack-text h3 {
+    font-size: 28px;
+  }
+
+  .techstack-groups {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
